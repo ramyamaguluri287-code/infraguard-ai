@@ -1,0 +1,20 @@
+{
+  "name": "infraguard-ai",
+  "version": "1.0.0",
+  "description": "InfraGuard AI - Smart City Infrastructure Inspection & Predictive Maintenance Command Center (Full MERN Stack)",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "ramyamaguluri287-code",
+  "license": "MIT"
+}
